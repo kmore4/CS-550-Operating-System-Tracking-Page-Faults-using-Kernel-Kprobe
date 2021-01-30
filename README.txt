@@ -1,19 +1,12 @@
-To execute part B of kprobe, my code needs to be run twice
+Steps for Execution
 
-Eg.
-
-sudo insmod pf_probe_B1.ko processID=481
-dmesg --(It wont show any output.)
-
-to see output--
-
-1) remove inserted modeule
- sudo rmmod pf_probe_B1
-
-2) Again insert b module
+1) Insert a module
 	sudo insmod pf_probe_B1.ko processID=481
-
-3) dmesg
+	
+2) dmesg
 	now you can see output on a console
+	
+3) remove inserted modeule
+ 	sudo rmmod pf_probe_B1
 
-4) Remove module and make clean
+4) make clean
